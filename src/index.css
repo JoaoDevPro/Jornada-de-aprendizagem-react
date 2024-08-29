@@ -5,9 +5,43 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(238, 240, 241);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container1{
+  display: flex;
+  flex-wrap: wrap; /* Isso faz com que os itens quebrem para uma nova linha se não couberem */
+  gap: 10px;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: -8%;
+}
+.data-item {
+  display: inline-block;
+  /*margin-left: 70px;  /* -=-=-=-=-Depois que colocar o sidebar, vai precisar arruma esse codigo -=-=-=-=-=-  */
+  margin: 20px;
+  
+  border: 1px solid #ccc;
+  padding: 16px;
+  background-color: #f9f9f9;
+  width: 25%; /* Largura fixa ou ajustável */
+  vertical-align: top; /* Alinhamento vertical para ajustar ao topo */
+  border-radius: 10px;
+  text-align: left;
+  
+
+}
+.titulo{
+  text-align: center;
+  
+  
+}
+.app{
+  display: flex;
+  height: 100vh;
 }
