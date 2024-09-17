@@ -3,6 +3,10 @@
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
+    background-color: white;
+    border-left: #524e4e;
+    border-right: #524e4e;
+    
 }
 
 h2 {
@@ -26,7 +30,6 @@ th {
     border-bottom: 2px solid grey;
     
 }
-
 
 
 
@@ -63,6 +66,8 @@ button:hover {
 
 
 .button-salvar{
+    height: 42px;
+    margin-left: 30px;
     background-color: orange;
     color: white;
     font-size: 16px;
@@ -71,7 +76,7 @@ button:hover {
 
 .button-salvar:hover{
     background-color: rgb(223, 146, 3);
-    color: #f1f1f1;
+    color: white;
     
 }
 
@@ -79,32 +84,96 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+input{ 
+    margin-left: 12px;
+    height: 42px;
+    width: 18%;
+    flex-wrap: wrap;
+    align-items: none;
+    margin-bottom: 1%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    
+}
+
+
 
 .form-group {
-    flex: 1 1 45%; /* Ajuste a largura conforme necessário */
     display: flex;
     flex-direction: column;
+    background-color: white;
+    background: white;
 }
 
-.form-group label {
-    margin-bottom: 5px;
-    font-weight: bold;
+
+
+.div-cinza {
+    background-color: #524e4e; /* Cor de fundo cinza */
+    padding: 20px;
+    border-radius: 8px;
+    
+    
 }
 
-.form-group input,
-.form-group select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+
+/*stlização dos inputs especificos da pagina    */
+.input-projeto{
+    width: 300px;
+    margin-left: 12px;
 }
 
-.form-group input[type="date"] {
-    padding: 8px;
+.input-descricao{
+    width: 300px;
+    margin: 12px;
 }
+
+.input-descricao:focus{
+    border: solid 1px #f3960c;
+    width: 300px;
+    margin: 12px;
+}
+
+.input-jalon{
+    width: 200px;
+}
+
+.input-tipo{
+    width: 250px;
+    margin: 12px;
+}
+
+.input-area{
+    width: 250px;
+    margin: 12px;
+}
+
+.input-classificacao{
+    width: 300px;
+    margin: 12px;
+}
+
+.input-impacto{
+    width: 200px;
+    margin-left: 12px;
+}
+
+.input-metier{
+    width: 200px;
+    margin-left: 12px;
+}
+
+.input-data{
+    width: 200px;
+    margin-left: 12px;
+    font-size: #ccc;
+}
+
+
+
+
 

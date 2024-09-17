@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(238, 240, 241);
+  background-color: white;
 }
 
 code {
@@ -13,22 +13,15 @@ code {
     monospace;
 }
 
-.container1{
-  display: flex;
-  flex-wrap: wrap; /* Isso faz com que os itens quebrem para uma nova linha se não couberem */
-  gap: 10px;
-  text-align: center;
-  margin-top: 2%;
-  margin-left: -8%;
-}
+
 .data-item {
   display: inline-block;
   /*margin-left: 70px;  /* -=-=-=-=-Depois que colocar o sidebar, vai precisar arruma esse codigo -=-=-=-=-=-  */
   margin: 20px;
   
-  border: 1px solid #ccc;
+
   padding: 16px;
-  background-color: #f9f9f9;
+  background-color: white;
   width: 25%; /* Largura fixa ou ajustável */
   vertical-align: top; /* Alinhamento vertical para ajustar ao topo */
   border-radius: 10px;
