@@ -5,7 +5,7 @@
   box-sizing: border-box;
   background-color: white;
   margin-top: 30px;
-  
+
 }
 
 h2 {
@@ -180,17 +180,18 @@ input:focus {
   height: 70px;
   width: 89.5%;
   display: flex;
+  align-items: center;
   position: absolute;
   z-index: 2;
   margin-top: -25px;
   color: white;
-  margin-right: 0.8rem;
-  margin-left: 0.8rem;
+  margin-left: 1rem;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3); /* Sombreamento na parte de baixo */
   
  
 }
 
-.titulo {
-  margin-left: 15px;
-}
+
+
+
+

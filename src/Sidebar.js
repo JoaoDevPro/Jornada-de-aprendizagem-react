@@ -1,5 +1,6 @@
 // Sidebar.js
 import React, { useState } from "react";
+import { FaHome, FaDiceD6, FaChevronRight, FaBolt, FaBell } from "react-icons/fa";
 import "./Sidebar.css"; // Assumindo que o CSS está em um arquivo Sidebar.css
 
 function Sidebar() {
@@ -20,30 +21,31 @@ function Sidebar() {
           title="Expandir sidebar"
           onClick={toggleSidebar}
         >
-          <i className={`fa-solid ${isCollapsed ? "fa-chevron-left" : "fa-chevron-right"}`} aria-hidden="true"></i>
+          <i className={`fa-solid ${isCollapsed ? "fa-chevron-left" : "fa-chevron-right"}`} aria-hidden="true"><FaChevronRight /></i>
         </button>
       </div>
 
       <div className="sidebar-links">
         <ul>
           <li style={{ marginTop: "3rem" }}>
+            
             <a href="/home" className="active">
-              <i className="fa regular fa-house"></i> <span>Home</span>
+              <i className="fa regular fa-house" class="fa fa-home"><FaHome size={20}/></i> <span>Home</span>
             </a>
           </li>
           <li>
             <a href="/listar-risco">
-              <i className="fas fa-exclamation-triangle"></i> <span>Risco</span>
+              <i className="fas fa-exclamation-triangle"><FaBolt size={17}/></i> <span>Risco</span>
             </a>
           </li>
           <li>
             <a href="/listar-solucao">
-              <i className="fa-regular fa-lightbulb"></i> <span>Solução</span>
+              <i className="fa-regular fa-lightbulb"><FaDiceD6 size={17}/></i> <span>Solução</span>
             </a>
           </li>
           <li>
             <a href="#settings">
-              <i className="fas fa-cog"></i> <span>Configurações</span>
+              <i className="fas fa-cog"><FaBell size={17}/></i> <span>Notificações</span>
             </a>
           </li>
         </ul>

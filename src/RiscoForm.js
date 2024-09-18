@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 import api from './axiosConfig';
 import "./RiscoList.css";
+import { FaCalendar } from 'react-icons/fa';
+
+
+
 
 const RiscoForm = ({ riscoAtual, onSave }) => {
+    const [selectedDate, setSelectedDate] = useState(null);
     const [risco, setRisco] = useState({
         descricao: '',
         tipo: '',
@@ -39,6 +46,7 @@ const RiscoForm = ({ riscoAtual, onSave }) => {
         }
         onSave();
     };
+
 
     return (
         

@@ -43,7 +43,9 @@ const RiscoList = () => {
 
     return (
         <div className='container1'>
+            <div className='teste'>
             <div className='div-titulo'><h2 className='titulo'>Gestão de Riscos</h2></div>
+            </div>
             <RiscoForm riscoAtual={riscoAtual} onSave={handleSave} />
             <table>
                 <thead>
