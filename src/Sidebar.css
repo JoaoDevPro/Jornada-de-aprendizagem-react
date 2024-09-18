@@ -9,6 +9,12 @@
     --header-bg: #1f1f1f;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Work Sans', sans-serif;
     background: white;
@@ -21,9 +27,10 @@ body {
 
 .sidebar {
     position: sticky;
+    height: 100vh;
     top: 0;
     min-height: 100vh;
-    width: 13rem;
+    width: 10rem;
     background: var(--sidebar-background);
     padding: 1rem;
     color: var(--text);
@@ -32,7 +39,8 @@ body {
 }
 
 .sidebar.collapsed {
-    width: 4rem;
+    width: 3rem;
+    height: 100%;
 }
 
 .main-content {

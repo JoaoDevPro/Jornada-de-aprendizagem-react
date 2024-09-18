@@ -18,8 +18,6 @@ code {
   display: inline-block;
   /*margin-left: 70px;  /* -=-=-=-=-Depois que colocar o sidebar, vai precisar arruma esse codigo -=-=-=-=-=-  */
   margin: 20px;
-  
-
   padding: 16px;
   background-color: white;
   width: 25%; /* Largura fixa ou ajustável */
@@ -36,5 +34,6 @@ code {
 }
 .app{
   display: flex;
-  height: 100vh;
+  height: 100%;
 }
+
