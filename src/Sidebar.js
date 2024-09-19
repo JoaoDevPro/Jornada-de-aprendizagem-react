@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import { FaHome, FaDiceD6, FaChevronRight, FaBolt, FaBell } from "react-icons/fa";
 import "./Sidebar.css"; // Assumindo que o CSS está em um arquivo Sidebar.css
+import minhaImagem from './Imagem8.png';
+import renault from './renault.png';
 
 function Sidebar() {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -13,8 +15,8 @@ function Sidebar() {
   return (
     <nav className={`sidebar ${isCollapsed ? "collapsed" : ""}`}>
       <div className="logo_wrapper">
-        <img src="/path/to/renault5.png" alt="Logo" className="logo-small" />
-        <span className="company-name">Empresa</span>
+      <img className="logo" src={minhaImagem} alt="Descrição da imagem" />
+        <span className="company-name">Renault</span>
         <button
           className="expand-btn"
           aria-label="Expandir Sidebar"

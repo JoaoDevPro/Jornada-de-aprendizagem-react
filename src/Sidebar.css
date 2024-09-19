@@ -171,6 +171,11 @@ body {
     margin-top: 70%;
 }
 
+.logo{
+height: 40px;
+}
+
+
 
 .expand-btn {
     position: absolute;
